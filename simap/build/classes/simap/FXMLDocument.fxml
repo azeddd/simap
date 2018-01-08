@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simap.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <VBox alignment="CENTER" layoutX="266.0" layoutY="-13.0" maxWidth="0.0" prefHeight="574.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
+               <children>
+                    <Label fx:id="label" minHeight="16" minWidth="69" />
+                  <ImageView fitHeight="89.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logoin.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="18.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <JFXTextField focusColor="#444444" labelFloat="true" maxWidth="284.0" prefHeight="39.0" promptText="alamat email" unFocusColor="#444444">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="12.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField focusColor="#444444" labelFloat="true" maxWidth="284.0" prefHeight="39.0" prefWidth="297.0" promptText="kata sandi" unFocusColor="#444444">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton maxWidth="284.0" prefHeight="34.0" prefWidth="297.0" style="-fx-background-color: #1ABB9B;" text="Masuk" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+          </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="574.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="59.0" prefWidth="800.0" style="-fx-background-color: #2196F3;" AnchorPane.bottomAnchor="515.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/interface.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="673.0" layoutY="23.0" text="Hai, Henzo   |   Keluar" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="358.0" layoutY="153.0" text="UBAH DATA">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="195.0" text="Nomor dan Tanggal Surat Tugas">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="228.0" text="Nomor dan Tanggal Laporan">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="261.0" text="Ketua Tim">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="296.0" text="Tanggal Penugasan">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="351.0" text="Keterangan">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="311.0" layoutY="295.0" text="Dari">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="505.0" layoutY="296.0" text="Sampai">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="345.0" layoutY="292.0" prefHeight="4.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="191.0" prefHeight="25.0" prefWidth="176.0" />
+            <DatePicker layoutX="505.0" layoutY="191.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="224.0" prefHeight="25.0" prefWidth="176.0" />
+            <DatePicker layoutX="505.0" layoutY="224.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="257.0" prefHeight="25.0" prefWidth="176.0" />
+            <DatePicker layoutX="550.0" layoutY="292.0" prefHeight="4.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="327.0" prefHeight="65.0" prefWidth="380.0" />
+            <JFXButton layoutX="311.0" layoutY="405.0" maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #1ABB9B;" text="SIMPAN" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="378.0" layoutY="405.0" maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #E33834;" text="BATAL" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="574.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="59.0" prefWidth="800.0" style="-fx-background-color: #2196F3;" AnchorPane.bottomAnchor="515.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/interface.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="673.0" layoutY="23.0" text="Hai, Henzo   |   Keluar" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="358.0" layoutY="153.0" text="TAMBAH DATA">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="195.0" text="Nomor dan Tanggal Surat Tugas">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="228.0" text="Nomor dan Tanggal Laporan">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="261.0" text="Ketua Tim">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="296.0" text="Tanggal Penugasan">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="351.0" text="Keterangan">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="311.0" layoutY="295.0" text="Dari">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="505.0" layoutY="296.0" text="Sampai">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="345.0" layoutY="292.0" prefHeight="4.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="191.0" prefHeight="25.0" prefWidth="176.0" />
+            <DatePicker layoutX="505.0" layoutY="191.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="224.0" prefHeight="25.0" prefWidth="176.0" />
+            <DatePicker layoutX="505.0" layoutY="224.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="257.0" prefHeight="25.0" prefWidth="176.0" />
+            <DatePicker layoutX="550.0" layoutY="292.0" prefHeight="4.0" prefWidth="142.0" />
+            <TextField layoutX="311.0" layoutY="327.0" prefHeight="65.0" prefWidth="380.0" />
+            <JFXButton layoutX="311.0" layoutY="405.0" maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #1ABB9B;" text="SIMPAN" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="378.0" layoutY="405.0" maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #E33834;" text="BATAL" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

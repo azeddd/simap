@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simap.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <VBox alignment="CENTER" layoutX="266.0" layoutY="-13.0" maxWidth="0.0" prefHeight="574.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
+               <children>
+                    <Label fx:id="label" minHeight="16" minWidth="69" />
+                  <ImageView fitHeight="89.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logoin.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="18.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <JFXTextField focusColor="#444444" labelFloat="true" maxWidth="284.0" prefHeight="39.0" promptText="alamat email" unFocusColor="#444444">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="12.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField focusColor="#444444" labelFloat="true" maxWidth="284.0" prefHeight="39.0" prefWidth="297.0" promptText="kata sandi" unFocusColor="#444444">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton maxWidth="284.0" prefHeight="34.0" prefWidth="297.0" style="-fx-background-color: #1ABB9B;" text="Masuk" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+          </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="574.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="59.0" prefWidth="800.0" style="-fx-background-color: #2196F3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/interface.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="673.0" layoutY="23.0" text="Hai, Henzo   |   Keluar" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="23.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" layoutY="153.0" maxHeight="574.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="UBAH DATA">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Nomor dan Tanggal Surat Tugas">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="176.0">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker prefHeight="25.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="18.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Nomor dan Tanggal Laporan">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="176.0">
+                           <HBox.margin>
+                              <Insets left="58.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker prefHeight="25.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="18.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Ketua Tim">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-200.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="176.0">
+                           <HBox.margin>
+                              <Insets left="149.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Tanggal Penugasan">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Dari">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <DatePicker prefHeight="4.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="83.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <Label text="Sampai">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="51.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker prefHeight="4.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Keterangan">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="65.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="142.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <JFXButton maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #1ABB9B;" text="SIMPAN" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #E33834;" text="BATAL" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="7.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-53.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="574.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="59.0" prefWidth="800.0" style="-fx-background-color: #2196F3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/interface.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="673.0" layoutY="23.0" text="Hai, Henzo   |   Keluar" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="23.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" layoutY="153.0" maxHeight="574.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="TAMBAH DATA">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Nomor dan Tanggal Surat Tugas">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="176.0">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker prefHeight="25.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="18.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Nomor dan Tanggal Laporan">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="176.0">
+                           <HBox.margin>
+                              <Insets left="58.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker prefHeight="25.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="18.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Ketua Tim">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="-200.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="25.0" prefWidth="176.0">
+                           <HBox.margin>
+                              <Insets left="149.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Tanggal Penugasan">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Dari">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <DatePicker prefHeight="4.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="83.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <Label text="Sampai">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="51.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker prefHeight="4.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Keterangan">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="65.0" prefWidth="380.0">
+                           <HBox.margin>
+                              <Insets left="142.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="23.0" prefWidth="800.0">
+                     <children>
+                        <JFXButton maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #1ABB9B;" text="SIMPAN" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton maxWidth="284.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #E33834;" text="BATAL" textFill="WHITE">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="7.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-53.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

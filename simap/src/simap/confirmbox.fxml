@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="42.0" prefWidth="405.0" style="-fx-background-color: #1ABB9B; -fx-background-radius: 0 0 3 3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="17.0" layoutY="8.0" text="Konfirmasi" textFill="WHITE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="8.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutY="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/warning.png" />
+               </image>
+            </ImageView>
+            <VBox>
+               <children>
+                  <Label text="Apakah kamu yakin ingin menghapus berkas ini ?" textFill="#444444">
+                     <font>
+                        <Font size="11.75" />
+                     </font>
+                  </Label>
+                  <Label text="File yang telah dihapus, tidak bisa dikembalikan" textFill="#444444">
+                     <font>
+                        <Font size="11.75" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="-4.0" layoutY="139.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton prefHeight="28.0" prefWidth="51.0" style="-fx-background-color: #E33834;" text="YA" textFill="WHITE" />
+            <JFXButton prefHeight="28.0" prefWidth="86.0" style="-fx-border-color: #444444; -fx-border-radius: 3;" text="TIDAK" textFill="#444444">
+               <HBox.margin>
+                  <Insets left="5.0" right="45.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
